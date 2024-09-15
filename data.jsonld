@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP108:body",
+      "@context": {
+        "references": {
+          "@id": "CIP108:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP108:referenceHash",
+              "@context": {
+                "hashDigest": "CIP108:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "title": "CIP108:title",
+        "abstract": "CIP108:abstract",
+        "motivation": "CIP108:motivation",
+        "rationale": "CIP108:rationale"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "abstract": "This proposal aims to set a formal hard cap of 45 billion ADA tokens on the Cardano blockchain, ensuring no further issuance of tokens beyond this limit. This will protect ADA’s scarcity, preserve its long-term value, and align with the decentralized governance model of Cardano. By enshrining the hard cap through governance, the proposal guarantees economic stability for all stakeholders and promotes the sustainability of the network.",
+    "motivation": "The current supply cap of 45 billion ADA tokens is not yet formalized as a governance-enforced hard limit, leaving open the possibility of future inflation or token issuance beyond this threshold. Such ambiguity could erode trust in the network’s tokenomics, potentially leading to inflation, which dilutes the value of existing holdings and introduces economic uncertainty.\n\nThis lack of formal governance over ADA’s maximum supply poses a long-term risk to the Cardano ecosystem. Without a hard cap, stakeholders have no guarantee that future governance actions won’t lead to inflationary pressures, damaging investor confidence, and undermining the sustainability of the network.",
+    "rationale": "This problem is solved by formalizing the existing 45 billion ADA cap as a governance-enforced hard limit, preventing any further issuance of tokens. This will eliminate any ambiguity regarding ADA’s maximum supply and ensure that the network maintains a predictable and inflation-resistant monetary policy.\n\nBy enacting this hard cap through Cardano’s decentralized governance model, we allow ADA holders to protect the token’s value collectively. This governance-led approach ensures that economic stability is controlled by the community, preventing centralized actors or future decisions from altering the cap without broad consensus.\n\nThis change promotes long-term sustainability, as the fixed supply of ADA, combined with its staking rewards and transaction fees, will ensure that the network remains secure and economically sound without reliance on inflationary tactics.",
+    "references": [],
+    "title": "Establishing a Governance-Enforced Hard Cap of 45 Billion ADA Tokens"
+  }
+}
