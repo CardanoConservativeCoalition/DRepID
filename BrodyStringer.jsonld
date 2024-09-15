@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "BrodyStringer",
+    "motivations": "I founded the CCC to bring like-minded individuals together in support of Cardano’s core values. My desire to become a DRep stems from my passion for preserving the blockchain’s integrity and ensuring that it remains decentralized. I believe that my leadership in forming the CCC, combined with my experiences within the Cardano ecosystem, enables me to champion the goals of the party and work toward a stronger, more stable future for Cardano.",
+    "objectives": " As the founder of the Cardano Conservative Coalition (CCC), my primary objective as a DRep is to uphold the mission of the CCC by ensuring that Cardano’s governance remains aligned with its foundational principles. I am committed to advocating for policies that safeguard decentralization, including the enshrinement of the 45B ADA hard cap, which is essential for preserving the network’s economic integrity. I aim to foster governance that remains true to Cardano’s vision while empowering the community to shape its future.",
+    "paymentAddress": "addr1q9a72vrgch7txja2ealtjstafefdv386yh9yy2dg87q4f4nx377h6rgzjvg2rfrhv00d8qhqxua2lgvmjz6ct2vvk7qsc65kus",
+    "qualifications": " As the founder of the CCC, I have demonstrated leadership and a deep understanding of Cardano’s governance and community dynamics. My experience in advocating for sound governance principles, along with my role in building a political party focused on preserving Cardano’s long-term vision, equips me with the knowledge and qualifications needed to represent the community effectively as a DRep.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X Profile",
+        "uri": "https://x.com/BStringDaKing"
+      },
+      {
+        "@type": "Link",
+        "label": "GitHub Profile",
+        "uri": "https://github.com/CardanoConservativeCoalition"
+      },
+      {
+        "@type": "Identity",
+        "label": "Gov tools DRep Directory",
+        "uri": "https://gov.tools/connected/drep_directory/drep128vyp05qxvnrtv63p0tckzw6c0cf8n99q4u9fxsmzzn2xg6jzla"
+      }
+    ]
+  }
+}
